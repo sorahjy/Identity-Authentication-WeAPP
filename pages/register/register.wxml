@@ -1,0 +1,17 @@
+<!--pages/register/register.wxml-->
+
+<view class="container">
+  <view class="text_welcome">
+    <text>您好</text>
+    <text class="user_id">{{userInfo.nickName}}</text>
+    <text>，这是您第一次使用本小程序，请点击以下按钮进行注册！注册只需要您的一张照片。</text><text class="text_red">注意！</text><text>注册后身份无法修改</text>
+  </view>
+  <view>
+    <button class="user" bindtap='register_user'>普通用户</button>
+    <button class="admin" bindtap='register_admin'>管理员</button>
+  </view>
+    
+  <view class="text_role">
+    <text>若您是管理员，请点击管理员。否则请点击普通用户。</text>
+  </view>
+</view>

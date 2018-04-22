@@ -1,0 +1,14 @@
+<!--pages/fix/fix.wxml-->
+<view class='container'>
+  <view class='input-wrapper'>
+    <input bindinput='oldPasswordHandler' placeholder='请输入旧密码' value='{{text}}'></input>
+  </view>
+  <view class='input-wrapper'>
+    <input bindinput='newPasswordHandler' placeholder='请输入新密码' value='{{text}}'></input>
+  </view>
+  <view >
+  <button class="buttonl" bindtap='confirmbutton'>确认修改</button>
+  <button class="buttonr" bindtap='gobackbutton'>取消并返回</button>
+  </view>
+  
+</view>

@@ -1,0 +1,18 @@
+<!-- user -->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+<view class='input-wrapper'>
+    <input bindinput='inputHandler' placeholder='请输入密码：默认8888' value='{{text}}'></input>
+</view>
+
+  <view class='user-motto'>
+    <button class="user-motto" bindtap='signIn'>点我签到</button>
+  </view>
+</view>

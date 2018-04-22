@@ -1,0 +1,15 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  border-right: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+  margin: 10rpx;
+}
+page{
+  background: darkcyan;
+  height: 100%;
+  color: white;
+}

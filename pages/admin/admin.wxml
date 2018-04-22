@@ -1,0 +1,18 @@
+<!-- user -->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">管理员:{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+
+  
+  <view class="user-motto" >
+    <button bindtap='setPassword'>修改签到密码</button>
+    <button bindtap='setLocation'>更新签到位置</button>
+    <button bindtap='seelog'>查看签到情况</button>
+  </view>
+</view>

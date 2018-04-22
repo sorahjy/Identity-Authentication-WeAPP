@@ -1,0 +1,51 @@
+/* pages/finish/finish.wxss */
+
+page{
+  background: #58a;
+  background-image: repeating-linear-gradient(30deg, 
+              hsla(0,0%,100%,.1), hsla(0,0%,100%,.1) 15px,
+              transparent 0, transparent 30px);
+  height: 100%;
+}
+text{
+  color: white;
+  max-width: 80%;
+  font-size: 125%;
+  margin: .1em;
+  text-shadow: 0 -.1em .1em rgba(0,0,0,.5);
+}
+
+.user_id {
+	font-style: italic;
+  color: tan;
+}
+
+button{
+    margin:0.5em;
+	  padding: .3em, .8em;
+    border: 1px solid rgba(0,0,0,.1);
+    background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
+    border-radius: .2em;
+    box-shadow: 0 .1em .4em rgba(0,0,0,.5);
+    color: white;
+    text-shadow: 0 -.1em .1em rgba(0,0,0,.5);
+    font-size: 130%;
+    line-height: 220%;
+}
+
+button.user{
+	background: #6b0;
+  float: left;
+}
+button.admin{
+	background: #c00;
+  float: right;
+}
+
+
+.text_role{
+  color: lightcyan;
+  max-width: 80%;
+  font-size: 125%;
+  margin: 0.1em;
+}
